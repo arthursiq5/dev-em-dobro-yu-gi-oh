@@ -1,0 +1,42 @@
+body {
+    font-family: 'Yugioh', sans-serif;
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.cabecalho {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header.cabecalho h1 {
+    color: #f1ecff;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.btn-seta {
+    border-radius: 100px;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0 .2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.esconder{
+    display: none;
+}

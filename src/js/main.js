@@ -12,6 +12,16 @@ function mostrarCartao(indiceCartao) {
     cartoes[indiceCartao].classList.add("selecionado");
 }
 
+cartoes.forEach((cartao) => {
+    cartao.addEventListener("click", () => {
+        const cartaVirada = cartao.querySelector(".carta-virada");
+        const descricao = cartao.querySelector(".descricao");
+        cartao.classList.toggle("virar");
+        cartaVirada.classList.toggle("fundo-carta");
+        descricao.classList.toggle("esconder");
+    })
+})
+
 btnAvancar.addEventListener('click', (e) => {
     e.preventDefault();
     esconderCartaoSelecionado();

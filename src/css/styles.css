@@ -6,7 +6,6 @@ body {
 }
 
 header.cabecalho {
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

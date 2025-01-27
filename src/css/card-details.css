@@ -3,7 +3,7 @@
     height: 550px;
     padding: 12px;
     border-radius: 10px;
-    /*position: relative;*/
+    position: relative;
 }
 
 .cartao {
@@ -13,12 +13,13 @@
     padding: 12px;
     border-radius: 2px;
     gap: 5px;
-    /*position: absolute;*/
+    position: absolute;
+    z-index: 0;
 }
 
 .cartao.selecionado {
     opacity: 1;
-    display: flex;
+    z-index: 1;
 }
 
 .cartao .nome {
@@ -77,8 +78,19 @@
     display: inline-block;
 }
 
+.cartao .informacoes {
+    border-radius: 5px;
+    max-width: 300px;
+    color: #000000;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    font-style: italic;
+    border: 2px solid #a67c52;
+    text-align: left;
+    line-height: 1.5;
+    padding: 5px;
+}
+
 .cartao .informacoes .informacoes-ataque {
-    background-color: chartreuse;
     display: flex;
     justify-content: flex-end;
     gap: 5px;
